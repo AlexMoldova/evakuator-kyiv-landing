@@ -266,3 +266,20 @@ section{overflow-x:hidden}
   .seo-box{padding:22px 20px}
   .hero-actions .btn{width:100%;justify-content:center}
 }
+
+/* ══ EVK MOBILE FIX 2026-09-18: 360–420px — шапка, kicker, safe-area, float-кнопки ══ */
+@media(max-width:600px){
+  .hero-kicker{letter-spacing:.13em;font-size:11px;padding:7px 12px;margin-bottom:20px}
+  .hero h1{overflow-wrap:break-word}
+  .float-contacts{bottom:calc(84px + env(safe-area-inset-bottom))!important;right:10px!important}
+  .mobile-call-bar{padding-bottom:calc(11px + env(safe-area-inset-bottom))}
+  .footer{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+}
+@media(max-width:400px){
+  .header-inner{gap:10px}
+  .header-phone{padding:8px 11px;font-size:12.5px;gap:7px}
+  .header-phone i{display:none}
+  .hero-kicker{letter-spacing:.1em}
+  .messengers{gap:8px}
+  .msgr{padding:10px 14px;font-size:12.5px}
+}
